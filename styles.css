@@ -1,0 +1,119 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* costum css */
+
+
+* {
+    
+    box-sizing: border-box; /* delete calculation of width */
+    font-family: Andale Mono, monospace;
+    
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+img {
+
+    max-width: 100%;
+
+}
+
+.bwStandardTextblock h2 {
+
+    font-size: 1.2em;
+    padding: 0 0 2.083333333333%;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.bwStandardTextblock {
+
+    margin: 1.041666666666667% 10.416666666667%;
+
+}
+
+.bwContact {
+
+    text-align: center;
+
+}
+
+.bwContact img {
+
+    width: 10%;
+    height: 10%;
+
+}
+
+@media all and (min-width: 768px)  {
+
+
+
+    .bwContact img {
+
+        width: 4.166666666667%;
+        height: 4.166666666667%;
+
+    }
+}
+
+@media all and (min-width: 1080px) {
+
+    .bwContact img {
+
+        width: 3.125%;
+        height: 3.125%;
+
+    }
+
+}

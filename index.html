@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bastian Winterott</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="jquery.fullPage.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#FFFFFF', '#4682B4', '#7BAABE', '#FFFFFF'],
+                anchors:['welcome', 'projectsBwde', 'projectsComingSoon', 'contact'],
+                navigation: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+                    // after leaving section 1 to 2
+                    if(index == 1 && direction =='down'){
+                        $('#bwSection2 h2').css({marginTop: -50, opacity: 0}).animate({marginTop: 0, opacity: 1}, 900);
+                        $('#bwSection2 p').css({opacity: 0}).delay(800).animate({opacity: 1}, 800);
+                    }
+
+                    // after leaving section 2 to 3
+                    else if(index == 2 && direction =='down'){
+                        $('#bwSection3 h2').css({marginTop: -50, opacity: 0}).animate({marginTop: 0, opacity: 1}, 900);
+                        $('#bwSection3 p').css({opacity: 0}).delay(800).animate({opacity: 1}, 800);
+                    }
+
+                    // after leaving section 3 to 4
+                    else if(index == 3 && direction =='down'){
+                        $('#bwSection4').css({opacity: 0}).animate({opacity: 1}, 1500);
+                    }
+
+                    // scrolling up from 2 to 1
+                    else if(index == 2 && direction == 'up'){
+                        $('#bwSection1').css({marginBottom: -100, opacity: 0.1}).animate({marginBottom: 0, opacity: 1}, 900);
+                    }
+
+                    // scrolling up from 3 to 2
+                    else if(index == 3 && direction == 'up'){
+                        $('#bwSection2 h2').css({marginButtom: -50, opacity: 0}).animate({marginButtom: 0, opacity: 1}, 900);
+                        $('#bwSection2 p').css({opacity: 0}).delay(800).animate({opacity: 1}, 800);
+                    }
+
+                    // scrolling up from 4 to 3
+                    else if(index == 4 && direction == 'up'){
+                        $('#bwSection3 h2').css({marginBottom: -50, opacity: 0}).animate({marginBottom: 0, opacity: 1}, 900);
+                        $('#bwSection3 p').css({opacity: 0}).delay(800).animate({opacity: 1}, 800);
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="fullpage">
+
+        <div class="section" id="section1">
+
+                <div id="bwSection1">
+
+                    <div class="bwStandardTextblock">
+                        <p>
+                            Hi and welcome to my website. My name is Bastian and I work as a software developer in Nuremberg, Germany. Software developing isn't only my job, 
+                            it also influences my private life. Therefore I'm very interested in new technologies and how they work. Since I'm a software developer I like books too. :)
+                            As programming is one of my passions, this website is meant to keep you updated about my private side projects.                            
+                        </p>
+                    </div>
+
+                    <div class="bwStandardTextblock">
+                        <p>
+                            Thank you for visiting my website. I hope you like it. 
+                        </p>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="section" id="section2">
+
+                <div id="bwSection2">
+
+                    <div class="bwStandardTextblock">
+
+                        <h2>My first Side-Project</h2>
+
+                        <p>
+                            Right now you can see my first side-project (which I have finished :) ) - the website you're visiting. 
+                            I used the great plugin <a href="https://github.com/alvarotrigo/fullPage.js">fullPage.js</a> to create it.
+                            The plugin supports you at creating a one page side. A few steps later you have a full functioning
+                            website and I think, it looks awesome.
+                        </p>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="section" id="section4">
+
+            <div id="bwSection3">
+
+                <div class="bwStandardTextblock">
+
+                    <h2>Next steps....</h2>
+
+                    <p>
+                        My plans for the future are to learn Angular2 from Google.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="section3">
+
+            <div id="bwSection4">
+
+                <div class="bwContact">
+                    <span><a href="https://twitter.com/bastiw92"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter-Logo"></a></span>
+                    <span><a href="https://github.com/hellobasti"><img src="img/github.png" alt="Github-Logo"></a></span>
+                    <p>Contact: BastianWinterott@gmail.com</p>
+                    <p>Copyright © Bastian Winterott - <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/de/deed.en">cc</a></p>
+                    <p>Plugin by <a href="https://github.com/alvarotrigo/fullPage.js">alvarotrigo</a></p>
+                </div>  
+
+            </div>          
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
