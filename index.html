@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bastian Winterott</title>
 
+    <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
     <link href="jquery.fullPage.css" rel="stylesheet" type="text/css"/>
 
@@ -43,7 +44,8 @@
 
                     // scrolling up from 2 to 1
                     else if(index == 2 && direction == 'up'){
-                        $('#bwSection1').css({marginBottom: -100, opacity: 0.1}).animate({marginBottom: 0, opacity: 1}, 900);
+                        $('#bwSection1 h2').css({marginButtom: -50, opacity: 0}).animate({marginButtom: 0, opacity: 1}, 900);
+                        $('#bwSection1 p').css({opacity: 0}).delay(800).animate({opacity: 1}, 800);
                     }
 
                     // scrolling up from 3 to 2
@@ -74,6 +76,9 @@
                 <div id="bwSection1">
 
                     <div class="bwStandardTextblock">
+
+                        <h2>Welcome</h2>
+
                         <p>
                             Hi and welcome to my website. My name is Bastian and I work as a software developer in Nuremberg, Germany. Software developing isn't only my job, 
                             it also influences my private life. Therefore I'm very interested in new technologies and how they work. Since I'm a software developer I like books too. :)
