@@ -1,13 +1,14 @@
 * {
     
     box-sizing: border-box; /* delete calculation of width */
-    font-family: Andale Mono, monospace;
+    font-family: 'Open Sans Condensed', sans-serif;
     
  }
 
- Body {
+ body {
 
      text-align: justify;
+     font-size: 1.3em;
  }
 
  a {
@@ -26,8 +27,9 @@ img {
 
 .bwStandardTextblock h2 {
 
-    font-size: 1.3em;
-    padding: 0 0 2.083333333333%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    margin: 0 0 2.083333333333%;
     font-weight: bold;
     text-transform: uppercase;
 
@@ -35,7 +37,7 @@ img {
 
 .bwStandardTextblock {
 
-    margin: 2.083333333333% 10.416666666667%;
+    margin: 2.083333333333% 20.416666666667%;
 
 }
 
@@ -55,7 +57,15 @@ img {
 @media all and (min-width: 768px)  {
 
     body {
-        font-size: 1.2em;
+
+        font-size: 1.5em;
+
+    }
+
+    .bwStandardTextblock h2 {
+
+        font-size: 1.8em;
+
     }
 
     .bwContact img {
@@ -67,10 +77,6 @@ img {
 }
 
 @media all and (min-width: 1080px) {
-
-    body {
-        font-size: 1.3em;
-    }
 
     .bwContact img {
 
