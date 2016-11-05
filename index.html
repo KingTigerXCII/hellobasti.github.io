@@ -27,8 +27,6 @@
                 onLeave: function(index, nextIndex, direction){
                     var leavingSection = $(this);
 
-                    
-
                     // after leaving section 1 to 2
                     if(index == 1 && direction =='down'){
 
@@ -80,19 +78,27 @@
         });
 
         function animateMarginTopOpacity(selector, animationTime){
+
             $(selector).css({marginTop: -50, opacity: 0}).animate({marginTop: 0, opacity: 1}, animationTime);
+
         }
 
         function animateMarginBottomOpacity(selector, animationTime){
+
             $(selector).css({marginButtom: -50, opacity: 0}).animate({marginButtom: 0, opacity: 1}, animationTime);
+
         }
 
         function animateOpacityWithDelay(selector, animationTime, delay){
+
             $(selector).css({opacity: 0}).delay(delay).animate({opacity: 1}, animationTime);
+
         }
 
         function animateOpacityWithoutDelay(selector, animationTime){
+
             $(selector).css({opacity: 0}).animate({opacity: 1}, animationTime);
+
         }
 
     </script>
@@ -112,9 +118,9 @@
                         <h2>&lt;Welcome&gt;</h2>
 
                         <p>
-                            Hi and welcome to my website. My name is Bastian and I work as a software developer in Nuremberg, Germany. Software developing isn't only my job, 
-                            it also influences my private life. Therefore I'm very interested in new technologies and how they work. Since I'm a software developer I like books too. :)
-                            As programming is one of my passions, this website is meant to keep you updated about my private side projects.                            
+                            Hi and welcome to my website. My name is Bastian, I'm 24 and I work as a software developer in Nuremberg, Germany. 
+                            Software developing isn't only my job, it also influences my private life. Therefore I'm very interested in new technologies
+                            and how they work. As programming is one of my passions, this website is meant to keep you updated about my private side projects.                            
                         </p>
                     </div>
 
@@ -137,7 +143,7 @@
                         <h2>&lt;My first Side-Project&gt;</h2>
 
                         <p>
-                            Right now you can see my first side-project (which I have finished :) ) - the website you're visiting. 
+                            Right now you can see my first side-project - the website you're visiting. 
                             I used the great plugin <a href="https://github.com/alvarotrigo/fullPage.js">fullPage.js</a> to create it.
                             The plugin supports you at creating a one page side. A few steps later you have a full functioning
                             website and in my opinion, it looks amazing.
@@ -181,7 +187,7 @@
                     <span><a href="https://twitter.com/bastiw92"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter-Logo"></a></span>
                     <span><a href="https://github.com/hellobasti"><img src="img/github.png" alt="Github-Logo"></a></span>
                     <p>Contact: BastianWinterott@gmail.com</p>
-                    <p>Copyright © Bastian Winterott - <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/de/deed.en">cc</a> - <a href="">Impressum</a></p>
+                    <p>Copyright © Bastian Winterott - <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/de/deed.en">cc</a> - <a href="impressum.html">Impressum</a></p>
                     <p>Plugin by <a href="https://github.com/alvarotrigo/fullPage.js">alvarotrigo</a></p>
                 </div>  
 
