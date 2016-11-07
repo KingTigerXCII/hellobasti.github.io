@@ -25,11 +25,12 @@ img {
 
 }
 
-.bwStandardTextblock h2 {
+.bwStandardTextblock h1 {
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     font-size: 1.5em;
-    margin: 0 0 2.083333333333%;
+    margin: 0 0 1.5%;
+    padding-bottom: 0.5%;
     font-weight: bold;
     text-transform: uppercase;
 
@@ -38,6 +39,7 @@ img {
 .bwStandardTextblock {
 
     margin: 2.083333333333% 20.416666666667%;
+    line-height: 120%;
 
 }
 
